@@ -1,0 +1,132 @@
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  color: #424242;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Yu Gothic", YuGothic, sans-serif;
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="text"] {
+  color: #424242;
+  font-family: sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.input-text {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+#searchForm {
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  margin: 40px auto 0;
+  padding: 1px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+#searchInput {
+  width: calc(100% - 30px);
+  font-size: 16px;
+  outline: none;
+  border: none;
+  padding: 8px 0 8px 10px;
+  box-sizing: border-box;
+}
+
+#search,
+#search .material-icons {
+  vertical-align: middle;
+}
+
+#search {
+  position: absolute;
+  top: calc(50% - 12.5px);
+  right: 10px;
+  cursor: pointer;
+}
+
+#search .material-icons {
+  color: #757575;
+}
+
+#additions,
+#settings {
+  width: 500px;
+  max-width: 90%;
+  padding: 0;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+#additions li {
+  display: inline-block;
+}
+
+#additions .button {
+  margin: 0 10px 10px 0;
+}
+
+.button {
+  display: inline-block;
+  color: #424242;
+  border: 1px solid #757575;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+  outline: none;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.7;
+}
+
+#edit .button,
+#add .button {
+  border-style: dashed;
+}
+
+#settings {
+  display: none;
+}
+
+#settings ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+#settings li {
+  margin-bottom: 20px;
+}
+
+#settings li input[type="text"] {
+  width: 350px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.right-buttons {
+  text-align: right;
+}
+
+.right-buttons .button {
+  margin-left: 10px;
+}
