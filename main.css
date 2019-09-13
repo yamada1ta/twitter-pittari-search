@@ -6,8 +6,8 @@ body, html {
 
 button {
   background: none;
-	border: none;
-	outline: none;
+  border: none;
+  outline: none;
   appearance: none;
   cursor: pointer;
   padding: 0;
