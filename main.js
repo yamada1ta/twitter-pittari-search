@@ -119,7 +119,7 @@ function showSettings() {
 }
 
 function initAdditions(additions) {
-  document.querySelector('#edit > a').addEventListener('click', e => {
+  document.querySelector('#edit > .button').addEventListener('click', e => {
     showSettings();
     e.preventDefault();
   });
@@ -134,17 +134,17 @@ function updateAdditions(additions) {
   root.appendChild(edit);
 
   additions.forEach(value => {
-    const a = document.createElement('a');
-    a.href = '#';
-    a.textContent = value;
-    a.addEventListener('click', e => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = value;
+    button.addEventListener('click', e => {
       addText(value);
       e.preventDefault();
     });
-    a.classList.add('button');
+    button.classList.add('button');
 
     const li = document.createElement('li');
-    li.appendChild(a);
+    li.appendChild(button);
 
     root.insertBefore(li, edit);
   });
