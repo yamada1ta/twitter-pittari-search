@@ -63,7 +63,7 @@ function search() {
     }
 
     window.open(
-      `https://twitter.com/search?f=tweets&q=${encodeURIComponent(query.join(' '))} OR @${Date.now().toString()}`
+      `https://twitter.com/search?f=live&q=${encodeURIComponent(query.join(' '))} OR @${Date.now().toString()}`
     );
   }
 
